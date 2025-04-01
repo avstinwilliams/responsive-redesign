@@ -1,32 +1,123 @@
-  <!-- TO RUN IN BROWSER:
-    1. Install vscode extension Name: open in `browser open-in-browser` by TechER
-    2. Right click html file and either run in default browser or another browser
-  -->
-
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML/CSS Studio</title>
-    <!-- import CSS styles -->
-    <link rel="stylesheet" href="styles.css" /> 
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Redesign: Dallas Library Website</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Responsive Redesign: Dallas Library Website</h1>
+		</header>
 
-  <!-- page content goes into <body> -->
-  <body>
-    <div id="logoBar">
-      <h1>Welcome to 100 Acre Wood!</h1>
-      <img id="siteLogo" alt="Pooh-bear site logo" src="./assets/Header.png"/>
-      <h3>We're glad you're here :D</h3>
-    </div>
-    <hr/>
-    <div id="staffGallery">
-      <img class="galleryImage" src="./assets/Eeyore-Eh.png"/>
-      <img class="galleryImage" src="./assets/Eeyore-Zz.png"/>
-      <img class="galleryImage" src="./assets/Kanga-Roo.png"/>
-      <img class="galleryImage" src="./assets/Owl-Phone.png"/>
-    </div>
-  </body>
+		<main>
+			<section id="introduction">
+				<h2>Introduction</h2>
+				<p>
+					For this project, I chose to redesign the Dallas Library website (<a
+						href="https://dallaslibrary2.org/"
+						target="_blank"
+						>dallaslibrary2.org</a
+					>) because its design appears dated and can benefit from a more modern, accessible, and responsive interface
+					that better serves its diverse audience.
+				</p>
+				<figure>
+					<img src="assets/original-screenshot.png" alt="Screenshot of the original Dallas Library website" />
+					<figcaption>Screenshot of the original Dallas Library website.</figcaption>
+				</figure>
+			</section>
 
+			<section id="part1">
+				<h2>Part 1: Identifying Usability Problems</h2>
+
+				<h3>Chosen Interface</h3>
+				<p>
+					The Dallas Library website is publicly accessible and was selected due to its cluttered navigation and
+					outdated visual elements that hinder efficient user interaction.
+				</p>
+
+				<h3>Usability & Accessibility Issues</h3>
+				<ul>
+					<li>
+						<strong>Efficiency:</strong> The navigation menus and content layout are very cluttered, making it
+						challenging for users to quickly find important features like event calendars or catalog search.
+					</li>
+					<li>
+						<strong>Learnability:</strong> Inconsistent visual cues and outdated design elements may confuse new users,
+						affecting their ability to quickly learn the website's layout.
+					</li>
+					<li>
+						<strong>Memorability:</strong> A lack of consistent design patterns makes it difficult for returning users
+						to remember where to locate key information.
+					</li>
+					<li>
+						<strong>Accessibility:</strong> A WebAIM WAVE analysis revealed issues like missing alt text, missing page
+						regions, and very small text which could hinder users with visual impairments.
+					</li>
+				</ul>
+			</section>
+
+			<section id="part2">
+				<h2>Part 2: Visual Redesign</h2>
+
+				<h3>Visual Design Style Guide</h3>
+				<p>
+					The style guide defines a modern color palette, accessible typography, and consistent design components to
+					ensure a cohesive experience throughout the site.
+				</p>
+				<figure>
+					<img src="assets/style-guide.png" alt="Visual design style guide for Dallas Library redesign" />
+					<figcaption>Visual Design Style Guide</figcaption>
+				</figure>
+
+				<h3>Mockups</h3>
+				<p>
+					The following mockups showcase the redesigned Dallas Library website for different screen sizes. The images
+					below display the mobile, tablet, and desktop views with annotations detailing layout choices.
+				</p>
+				<div class="mockups">
+					<figure>
+						<img src="assets/iphone-mockup.png" alt="Mobile mockup" />
+						<figcaption>Mobile Mockup</figcaption>
+					</figure>
+					<figure>
+						<img src="assets/ipad-mockup.png" alt="Tablet mockup" />
+						<figcaption>Tablet Mockup</figcaption>
+					</figure>
+					<figure>
+						<img src="assets/mac-mockup.png" alt="Desktop mockup" />
+						<figcaption>Desktop Mockup</figcaption>
+					</figure>
+				</div>
+			</section>
+
+			<section id="part3">
+				<h2>Part 3: Responsive Redesign</h2>
+				<p>
+					Building on the style guide and mockups, I implemented a responsive redesign of the Dallas Library website
+					using HTML and CSS. The new design adapts fluidly to mobile, tablet, and desktop views while addressing the
+					usability and accessibility issues identified in Part 1.
+				</p>
+				<p>
+					<a href="https://avstinwilliams.github.io/dallas-public-library/" target="_blank"
+						>View the Live Redesigned Page</a
+					>
+				</p>
+			</section>
+
+			<section id="conclusion">
+				<h2>Project Reflection & Lessons Learned</h2>
+				<p>
+					This project allowed me to address significant usability and accessibility challenges on an existing public
+					interface. By updating the visual style, simplifying navigation, and ensuring a responsive design, the
+					redesigned Dallas Library website now provides a more intuitive and engaging user experience.
+				</p>
+				<p>
+					The process emphasized the importance of a cohesive style guide and cross-device testing, ensuring that design
+					decisions enhance both user satisfaction and accessibility.
+				</p>
+			</section>
+		</main>
+	</body>
 </html>
