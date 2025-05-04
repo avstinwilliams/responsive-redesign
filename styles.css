@@ -1,103 +1,147 @@
+:root {
+	--green: #7a918d;
+	--brown: #484041;
+	--background: #fdfdfb;
+	--text-dark: #2c2c2c;
+	--text-light: #aac0aa;
+	--font-primary: "Rubik", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: Arial, sans-serif;
 	margin: 0;
-	padding: 0;
-	background-color: #f4f4f4;
-	color: #161616;
+	font-family: var(--font-primary);
+	background-color: var(--background);
+	color: var(--text-dark);
+	line-height: 1.6;
 }
 
 header {
-	background: #333;
+	background-color: var(--green);
 	color: white;
-	padding: 20px;
+	padding: 2rem;
 	text-align: center;
+}
+
+h1 {
+	font-size: 2rem;
+	margin: 0;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+}
+
+h3 {
+	font-size: 1.2rem;
+	margin-top: 1.5rem;
+}
+
+h4 {
+	font-size: 1rem;
+	margin-top: 1.5rem;
 }
 
 main {
 	max-width: 1000px;
-	margin: 20px auto;
-	padding: 20px;
+	margin: 2rem auto;
+	padding: 2rem;
 	background: white;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	border-radius: 8px;
-}
-
-h1 {
-	font-size: 24px;
-}
-
-h2 {
-	font-size: 20px;
-	margin-top: 20px;
-}
-
-h3 {
-	font-size: 18px;
-	margin-top: 20px;
-}
-
-h4 {
-	font-size: 16px;
-	margin-top: 20px;
+	border-radius: 12px;
 }
 
 section {
-	margin-bottom: 30px;
+	margin-bottom: 3rem;
 }
 
-p {
-	line-height: 1.6;
+p,
+ul,
+ol {
+	line-height: 1.7;
+	font-size: 1rem;
+}
+
+ul,
+ol {
+	margin-left: 1.5rem;
 }
 
 table {
 	width: 100%;
 	border-collapse: collapse;
-	margin: 20px 0;
+	margin: 1.5rem 0;
 	background: white;
+	font-size: 0.95rem;
 }
 
 th,
 td {
 	border: 1px solid #ddd;
 	padding: 12px;
+	vertical-align: top;
 }
 
 th {
-	background-color: #333;
+	background-color: var(--brown);
 	color: white;
 	font-weight: bold;
 }
 
 img {
 	display: block;
-	max-width: 70%;
+	max-width: 100%;
 	height: auto;
-	margin: 10px auto;
-	border-radius: 5px;
-	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	margin: 1rem auto;
+	border-radius: 6px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
 }
 
 figure {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 20px 0;
+	margin: 2rem 0;
 }
 
 figcaption {
-	font-size: 14px;
+	font-size: 0.9rem;
 	color: #555;
 	text-align: center;
-	margin-top: 5px;
+	margin-top: 0.5rem;
+	max-width: 90%;
+}
+
+@media (max-width: 1024px) {
+	main {
+		padding: 1.5rem;
+		margin: 1rem;
+	}
+
+	table {
+		font-size: 0.9rem;
+	}
 }
 
 @media (max-width: 600px) {
 	main {
+		padding: 1rem;
 		width: 95%;
-		padding: 15px;
+	}
+
+	h1 {
+		font-size: 1.5rem;
+	}
+
+	h2 {
+		font-size: 1.3rem;
 	}
 
 	table {
-		font-size: 14px;
+		font-size: 0.85rem;
 	}
 }
