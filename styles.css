@@ -21,6 +21,24 @@ header {
 	padding: 2rem 1rem;
 	text-align: center;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	position: relative;
+	padding-top: 3rem;
+}
+
+.back-link {
+	position: absolute;
+	top: 1.25rem;
+	left: 1.5rem;
+	font-size: 0.85rem;
+	color: var(--green);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 0.2s ease;
+}
+
+.back-link:hover {
+	text-decoration: underline;
+	color: var(--brown);
 }
 
 h1 {
